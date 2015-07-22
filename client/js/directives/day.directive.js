@@ -2,9 +2,9 @@ angular.module('app.directives').directive('day', function(){
     return {
         restrict: 'E',
         template: '<div class="panel" ng-click="toggle()">' +
-                        '<p >' +
+                        '<p>' +
                             '<strong>' +
-                                '{{ forecast.date }}' +
+                                '{{ forecast.day }} {{ forecast.date }}' +
                             '</strong>' +
                         '</p>' +
                         '<div ng-show="show">{{ forecast.text }}' +
