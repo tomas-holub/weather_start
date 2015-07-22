@@ -3,11 +3,11 @@
     <input type="text" ng-model="lowest"  placeholder="Lowest temperatre"/>
     <input type="text" ng-model="highest" placeholder="Highest temperatre"/>
     <div ng-show="place.item.condition.text">
-        <h1>Forecast For: {{ place.location.city }}</h1>
-        <h2>
+        <h3>Forecast For: {{ place.location.city }}</h3>
+        <h4>
             Current: {{ place.item.condition.text }} | {{ place.item.condition.temp }}&deg;
             <img src="http://l.yimg.com/a/i/us/we/52/{{place.item.condition.code}}.gif"/>
-        </h2>
+        </h4>
         <div ng-repeat="forecast in place.item.forecast | temperature:highest:lowest">
             <day></day>
         </div>

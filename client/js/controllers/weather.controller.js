@@ -9,7 +9,7 @@ angular.module('app.controllers').controller('WeatherCtrl',function($scope, Weat
 
             });
             
-            ImagesFactory.load({q: city}, {}, function(data) {
+            ImagesFactory.load({q: city + ' city'}, {}, function(data) {
                 if (data.responseData.results) {
                     $scope.images = data.responseData.results;
                 }   
