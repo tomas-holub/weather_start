@@ -15,9 +15,7 @@
   "dependencies": {
     "angular": "~1.4.2",
     "angular-ui-router": "~0.2.15",
-    "bower-foundation-css": "*"
-  },
-  "devDependencies": {
+    "bower-foundation-css": "*",
     "angular-resource": "~1.4.3"
   }
 }
